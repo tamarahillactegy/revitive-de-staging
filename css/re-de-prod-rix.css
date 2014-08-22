@@ -1,0 +1,116 @@
+/* Features Sections */
+.features{
+  text-align: center;
+}
+
+.feature{
+  display: inline-block;
+  width: 150px;
+  margin: 0 5px 10px 5px;
+  vertical-align: top;
+}
+
+.feature > p{
+  margin-top: 10px;
+  word-break: break-all;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+/* accordion styles */
+#accordion li{
+  list-style: none outside none;
+}
+
+#accordion li h2 a{
+  display: block;
+  border: solid 1px #d9d9d9;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+#accordion li h2 a:hover{
+  background-color: #ebebeb;
+  border-color: #d1d1d1;
+}
+
+#accordion li h2 a:before{
+  content:url('http://assets2.revitive.com/media/revitive/product/re-ix-arrow-right.png');
+  margin-right: 10px;
+}
+
+#accordion li h2 a.acc-open:before{
+  content:url('http://assets2.revitive.com/media/revitive/product/re-ix-arrow-down.png');
+  margin-right: 8px;
+}
+
+#accordion li .content{
+  padding: 5px 50px 10px 20px;
+}
+
+
+
+/* IsoRocker info-box */
+.pop-up-cover{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  zoom: 1;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
+  z-index: 120;
+}
+
+.info-box{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  border: solid 1px #d1d1d1;
+  border-radius: 5px;
+  width:450px;
+  text-align: left;
+  background-color: #fff;
+  z-index: 125;
+  padding-bottom: 10px;
+  cursor: auto;
+}
+
+.info-box:after{
+  content: " ";
+  display: block;
+  background-color: #fff;
+  height: 100%;
+  width:100%;
+}
+
+.info-box h3{
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: inherit;
+}
+
+.info-box p{
+padding: 0 20px;
+margin-bottom: 0.5em;
+}
+
+.pop-up-section{
+  cursor: pointer;
+}
+
+.pop-up-section:hover .info-box,
+.pop-up-section:hover .pop-up-cover{
+  top: 0px;
+  left: 0px;
+}
+
+.pop-up-section:hover .info-box{
+  left: 220px;
+}

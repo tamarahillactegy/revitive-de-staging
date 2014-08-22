@@ -1,0 +1,29 @@
+<div class="homemiddlecmsblock">
+<div style="border-color: #c4dec5; padding: 7px 12px 13px;"><a style="font-size: 18px;" href="{{store url=tvc}}">Neue Fernsehwerbung</a> <br /> <a href="{{store url=tvc}}"><img style="cursor: pointer; margin-top: 5px;" src="{{media url=re-de/home/re-de-block-home-tvc.jpg}}" alt="Neue Fernsehwerbung" /></a></div>
+<div style="border-color: #c4dec5; padding: 7px 12px 13px;"><a style="font-size: 18px;" href="{{store url=how-our-revitive-works}}">So funktioniert Revitive</a> <br /> <a href="{{store url=how-our-revitive-works}}"> <img style="cursor: pointer; margin-top: 5px;" src="{{media url=re_fr/static/home/re_fr_static_home_how_it_works.jpg}}" alt="So funktioniert Revitive" /></a></div>
+<div style="border-color: #c4dec5;"><a style="font-size: 18px;" href="{{store url="store-locator"}}">H&auml;ndlersuche</a> <br /> <a href="{{store url=store-locator}}"> <img src="{{media url=re_fr/static/home/re_fr_static_home_store_locator.png}}" alt="H&auml;ndlersuche" /></a></div>
+<div style="border-color: #c4dec5; padding: 7px 12px 13px;"><a style="font-size: 18px;" href="#" data-reveal-id="myModal-30-day-home">30 TAGE TESTEN OHNE RISIKO*</a><br /> <a href="#" data-reveal-id="myModal-30-day-home"> <img style="cursor: pointer; margin-top: 5px;" src="{{media url="re-de/home/re-de-block-home-test_11.jpg"}}" alt="30-Tage-Geld-zur&uuml;ck-Garantie" /></a>
+<p style="font-size: 13px; color: #575959; line-height: 18px; text-transform: none;">Ausprobieren ist der beste Weg, um die Wirkung von REVITIVE kennenzulernen</p>
+</div>
+</div>
+<div id="myModal-30-day-home" class="reveal-modal" style="background: #f2f2f2;">
+<h2 style="margin-bottom: 8px; color: #3a913f; font-size: 2.5em; border: 0;">30 TAGE TESTEN OHNE RISIKO*</h2>
+<p style="font-size: 15px; color: #575959; line-height: 22px;">Bestellen Sie Ihr REVITIVE und probieren Sie es ganz bequem Zuhause.</p>
+<img style="width: 100%; margin: 0 0 1em;" src="{{media url="revitive/home/re-uk-home-modal-lifestyle-01.png"}}" alt="" />
+<ol>
+<li>Wenn Sie innerhalb von 30 Tagen nicht von der Wirkung &uuml;berzeugt sind, schicken Sie es an uns zur&uuml;ck und wir erstatten Ihnen den Kaufpreis. Aber wir sind uns sicher, dass Sie es nicht wieder hergeben wollen!</li>
+<li>Die 30-Tage-Geld-zur&uuml;ck-Garantie gilt f&uuml;r die Modelle REVITIVE IX und REVITIVE LV.</li>
+<li>F&uuml;r Bestellungen oder mehr Informationen rufen Sie uns an unter Tel. 01806 100 400 (20ct pro Anruf aus dem deutschen Festnetz, 60ct pro Anruf aus Mobilfunknetzen), Mo-Fr zwischen 9 und 17 Uhr.</li>
+</ol><a class="close-reveal-modal">&times;</a></div>
+<script type="text/javascript">// <![CDATA[
+// externally add reveal.css
+jQuery("head").append("<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"http://assets2.revitive.fr/media/injector/default/css/reveal.css\">");
+
+// Redirect on close icon click
+jQuery("#myModal-30-day-home .close-reveal-modal").click(function(){
+	window.location.href = "products/revitive-ix";
+});
+
+// Minified Modal plugin - Zurb Reveal
+	(function(e){e("a[data-reveal-id]").live("click",function(t){t.preventDefault();var n=e(this).attr("data-reveal-id");e("#"+n).reveal(e(this).data())});e.fn.reveal=function(t){var n={animation:"fade",animationspeed:250,closeonbackgroundclick:true,dismissmodalclass:"close-reveal-modal"};var t=e.extend({},n,t);return this.each(function(){function a(){s=false}function f(){s=true}var n=e(this),r=parseInt(n.css("top")),i=n.height()+r,s=false,o=e(".reveal-modal-bg");if(o.length==0){o=e('<div class="reveal-modal-bg" />').insertAfter(n)}n.bind("reveal:open",function(){o.unbind("click.modalEvent");e("."+t.dismissmodalclass).unbind("click.modalEvent");if(!s){f();if(t.animation=="fadeAndPop"){n.css({top:e(document).scrollTop()-i,opacity:0,visibility:"visible"});o.fadeIn(t.animationspeed/2);n.delay(t.animationspeed/2).animate({top:e(document).scrollTop()+r+"px",opacity:1},t.animationspeed,a())}if(t.animation=="fade"){n.css({opacity:0,visibility:"visible",top:e(document).scrollTop()+r});o.fadeIn(t.animationspeed/2);n.delay(t.animationspeed/2).animate({opacity:1},t.animationspeed,a())}if(t.animation=="none"){n.css({visibility:"visible",top:e(document).scrollTop()+r});o.css({display:"block"});a()}}n.unbind("reveal:open")});n.bind("reveal:close",function(){if(!s){f();if(t.animation=="fadeAndPop"){o.delay(t.animationspeed).fadeOut(t.animationspeed);n.animate({top:e(document).scrollTop()-i+"px",opacity:0},t.animationspeed/2,function(){n.css({top:r,opacity:1,visibility:"hidden"});a()})}if(t.animation=="fade"){o.delay(t.animationspeed).fadeOut(t.animationspeed);n.animate({opacity:0},t.animationspeed,function(){n.css({opacity:1,visibility:"hidden",top:r});a()})}if(t.animation=="none"){n.css({visibility:"hidden",top:r});o.css({display:"none"})}}n.unbind("reveal:close")});n.trigger("reveal:open");var u=e("."+t.dismissmodalclass).bind("click.modalEvent",function(){n.trigger("reveal:close")});if(t.closeonbackgroundclick){o.css({cursor:"pointer"});o.bind("click.modalEvent",function(){n.trigger("reveal:close")})}e("body").keyup(function(e){if(e.which===27){n.trigger("reveal:close")}})})}})(jQuery)
+// ]]></script>

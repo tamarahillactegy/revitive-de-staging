@@ -1,0 +1,18 @@
+/* Features Sections */
+.features{
+  text-align: center;
+}
+
+.feature{
+  display: inline-block;
+  width: 150px;
+  margin: 0 5px 10px 5px;
+  vertical-align: top;
+}
+
+.feature > p{
+  margin-top: 10px;
+  word-break: break-all;
+  font-size: 16px;
+  line-height: 18px;
+}
